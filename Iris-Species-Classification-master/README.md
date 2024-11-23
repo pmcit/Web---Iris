@@ -1,27 +1,28 @@
-# Iris flower classification Web App(Deployed using Flask)
-This program applies basic machine learning (classification) concepts on *Fisher's Iris Data* to predict the species of a new sample of Iris flower.
+Ứng dụng web phân loại hoa Iris (Triển khai bằng Flask)
+Chương trình này áp dụng các khái niệm cơ bản về máy học (phân loại) trên Dữ liệu Iris của Fisher để dự đoán loài của một mẫu hoa Iris mới.
 
-**Software and Libraries**
-- Python 3.6.0
-- Anaconda 4.3.0 (32 bit)
-- scikit-learn 0.18.1
+Phần mềm và Thư viện
 
-**Introduction**  
-The dataset for this project originates from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Iris). The Iris flower data set or Fisher's Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher in his 1936 paper The use of multiple measurements in taxonomic problems as an example of linear discriminant analysis.
-- The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor).
-- Four features were measured from each sample (in centimetres): 
-  - Length of the sepals
-  - Width of the sepals
-  - Length of the petals
-  - Width of the petals
+Python 3.6.0
+Anaconda 4.3.0 (32 bit)
+scikit-learn 0.18.1
+Giới thiệu
+Bộ dữ liệu cho dự án này có nguồn gốc từ Kho lưu trữ máy học UCI . Bộ dữ liệu hoa Iris hoặc bộ dữ liệu Iris của Fisher là một bộ dữ liệu đa biến được nhà thống kê và nhà sinh vật học người Anh Ronald Fisher giới thiệu trong bài báo năm 1936 của ông có tên Sử dụng nhiều phép đo trong các vấn đề phân loại học như một ví dụ về phân tích phân biệt tuyến tính.
 
-**Working of the iris_decision_tree_classifier**
-- The program takes data from the `load_iris()` function available in `sklearn` module.
-- The program then creates a decision tree based on the dataset for classification.
-- The user is then asked to enter the four parameters of his sample and prediction about the species of the flower is printed to the user.
+Bộ dữ liệu bao gồm 50 mẫu từ mỗi loài trong ba loài Iris (Iris setosa, Iris virginica và Iris versicolor).
+Bốn đặc điểm được đo từ mỗi mẫu (tính bằng centimet):
+Chiều dài của lá đài
+Chiều rộng của lá đài
+Chiều dài của cánh hoa
+Chiều rộng của cánh hoa
+Hoạt động của iris_decision_tree_classifier
 
-**Working of the iris_selfmade_KNN**
-- The program takes data from the `load_iris()` function available in `sklearn` module.
-- The program then divides the dataset into training and testing samples in 80:20 ratio randomly using `train_test_learn()` function available in `sklearn` module.
-- The training sample space is used to train the program and predictions are made on the testing sample space.
-- Accuracy score is then calculated by comparing with the correct results of the training dataset.
+Chương trình lấy dữ liệu từ load_iris()hàm có sẵn trong sklearnmô-đun.
+Sau đó, chương trình sẽ tạo ra một cây quyết định dựa trên tập dữ liệu để phân loại.
+Sau đó, người dùng được yêu cầu nhập bốn thông số của mẫu và dự đoán về loài hoa sẽ được in ra cho người dùng.
+Hoạt động của iris_selfmade_KNN
+
+Chương trình lấy dữ liệu từ load_iris()hàm có sẵn trong sklearnmô-đun.
+Sau đó, chương trình chia tập dữ liệu thành các mẫu đào tạo và thử nghiệm theo tỷ lệ 80:20 một cách ngẫu nhiên bằng train_test_learn()hàm có sẵn trong sklearnmô-đun.
+Không gian mẫu đào tạo được sử dụng để đào tạo chương trình và các dự đoán được đưa ra trên không gian mẫu thử nghiệm.
+Điểm chính xác sau đó được tính bằng cách so sánh với kết quả chính xác của tập dữ liệu đào tạo.
